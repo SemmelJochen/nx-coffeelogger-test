@@ -8,10 +8,10 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
 export default defineConfig(({ mode }) => {
   return {
     root: __dirname,
-    cacheDir: `../node_modules/.vite`,
+    cacheDir: `../../node_modules/.vite`,
 
     build: {
-      outDir: '../dist/./coffeelogger/client',
+      outDir: '../../dist/./coffeelogger/client',
       reportCompressedSize: true,
       target: ['es2020'],
     },

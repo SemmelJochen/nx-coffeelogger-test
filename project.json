@@ -1,0 +1,14 @@
+{
+  "root": "libs/mylib/",
+  "projectType": "application",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {}
+    },
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {}
+    }
+  }
+}

@@ -17,15 +17,15 @@
       },
       "outputs": [
         "{options.outputPath}",
-        "{workspaceRoot}/dist/coffeelogger/.nitro",
-        "{workspaceRoot}/dist/coffeelogger/ssr",
-        "{workspaceRoot}/dist/coffeelogger/analog"
+        "{workspaceRoot}/dist/apps/coffeelogger/.nitro",
+        "{workspaceRoot}/dist/apps/coffeelogger/ssr",
+        "{workspaceRoot}/dist/apps/coffeelogger/analog"
       ],
       "options": {
-        "main": "coffeelogger/src/main.ts",
-        "configFile": "coffeelogger/vite.config.ts",
-        "outputPath": "dist/coffeelogger/client",
-        "tsConfig": "coffeelogger/tsconfig.app.json"
+        "main": "apps/coffeelogger/src/main.ts",
+        "configFile": "apps/coffeelogger/vite.config.ts",
+        "outputPath": "dist/apps/coffeelogger/client",
+        "tsConfig": "apps/coffeelogger/tsconfig.app.json"
       }
     },
     "serve": {
@@ -53,5 +53,5 @@
     }
   },
   "tags": [],
-  "sourceRoot": "./coffeelogger/src"
+  "sourceRoot": "./apps/coffeelogger/src"
 }
