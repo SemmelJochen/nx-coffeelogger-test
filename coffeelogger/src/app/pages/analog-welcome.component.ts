@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'analogjs-test-analog-welcome',
+  selector: 'coffeelogger-analog-welcome',
   standalone: true,
   host: {
     class:
@@ -71,6 +71,6 @@ import { Component } from '@angular/core';
 export class AnalogWelcomeComponent {
   public count = 0;
   public increment() {
-    this.count++;
+    this.count++
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "analogjs-test",
+  "name": "coffeelogger",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "targets": {
@@ -17,31 +17,31 @@
       },
       "outputs": [
         "{options.outputPath}",
-        "{workspaceRoot}/dist/analogjs-test/.nitro",
-        "{workspaceRoot}/dist/analogjs-test/ssr",
-        "{workspaceRoot}/dist/analogjs-test/analog"
+        "{workspaceRoot}/dist/coffeelogger/.nitro",
+        "{workspaceRoot}/dist/coffeelogger/ssr",
+        "{workspaceRoot}/dist/coffeelogger/analog"
       ],
       "options": {
-        "main": "analogjs-test/src/main.ts",
-        "configFile": "analogjs-test/vite.config.ts",
-        "outputPath": "dist/analogjs-test/client",
-        "tsConfig": "analogjs-test/tsconfig.app.json"
+        "main": "coffeelogger/src/main.ts",
+        "configFile": "coffeelogger/vite.config.ts",
+        "outputPath": "dist/coffeelogger/client",
+        "tsConfig": "coffeelogger/tsconfig.app.json"
       }
     },
     "serve": {
       "executor": "@analogjs/platform:vite-dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "analogjs-test:build",
+        "buildTarget": "coffeelogger:build",
         "port": 4200
       },
       "configurations": {
         "development": {
-          "buildTarget": "analogjs-test:build:development",
+          "buildTarget": "coffeelogger:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "analogjs-test:build:production"
+          "buildTarget": "coffeelogger:build:production"
         }
       }
     },
@@ -53,5 +53,5 @@
     }
   },
   "tags": [],
-  "sourceRoot": "./analogjs-test/src"
+  "sourceRoot": "./coffeelogger/src"
 }
