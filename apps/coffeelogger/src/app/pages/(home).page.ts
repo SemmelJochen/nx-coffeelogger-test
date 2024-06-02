@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
+import { AnalogWelcomeComponent } from 'apps/coffeelogger/src/app/components/analog-welcome.component'
 
-import { AnalogWelcomeComponent } from './analog-welcome.component'
+
 
 @Component({
   selector: 'coffeelogger-home',
