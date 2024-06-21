@@ -17,7 +17,7 @@ export class LoginButtonComponent {
 	login() {
 		console.log("login")
 		this.auth.loginWithRedirect().pipe(
-			map((val, idx) => console.log("got userrr", val, idx))
+			map((val, idx) => console.log("got user", val, idx))
 		)
 			.subscribe()
 	}
