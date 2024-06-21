@@ -21,15 +21,7 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@components/*": [
-        "apps/coffeelogger/src/components/*"
-      ],
-      "@libs/*": [
-        "libs/*"
-      ]
-    },
+    "noFallthroughCasesInSwitch": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

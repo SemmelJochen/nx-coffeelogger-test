@@ -6,16 +6,20 @@
 		</a>
 
 		<div class="flex md:order-2">
+			@if(auth.user$ | async) {
 			<button [brnMenuTriggerFor]="userdropdown">
 				<hlm-avatar variant="medium">
 					<img src="/logo_alt.webp" hlmAvatarImage />
 					<span class="bg-teal-300 text-white" hlmAvatarFallback>RG</span>
 				</hlm-avatar>
 			</button>
-
 			<ng-template #userdropdown>
 				<app-user-dropdown />
 			</ng-template>
+			} @else {
+			<app-login-button />
+			}
+
 
 			<hlm-sheet side="right">
 				<!-- Trigger -->
